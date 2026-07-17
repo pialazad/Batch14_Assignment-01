@@ -1,91 +1,125 @@
-nav {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    display: flex;
-    justify-content: space-between;
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Navbar */
+
+nav {
     max-width: 1200px;
     margin: auto;
-    padding: 12px 0px;
-}
-
-
-/*common style */
-.common-btn {
-    width: 100%;
-    padding: 15px;
-    border: none;
-    text-align: center;
-    margin: auto;
-    justify-content: center;
-    border-radius: 8px;
-    background: #0d6efd;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.common-btn:hover {
-    background: #0b5ed7;
-}
-
-
-ul {
+    padding: 15px 0;
 
     display: flex;
     justify-content: space-between;
-    list-style: none;
-    gap: 40px;
     align-items: center;
 }
 
-ul li a {
+
+.logo img {
+    width: 134px;
+    height: 44px;
+    object-fit: contain;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    list-style: none;
+}
+
+
+nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: 600;
 }
 
+
+/* Common Button*/
+
+.common-btn {
+
+    display: inline-block;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    background: #0d6efd;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+
+.common-btn:hover {
+    background: #0b5ed7;
+
+}
+
+
+
+/*Hero Section*/
+
 .hero {
-    width: auto;
+
     height: 700px;
-
     background-image:
-        linear-gradient(#0e0e0e, rgba(0, 0, 0, .75)),
+        linear-gradient(rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)),
         url("assets/banner.jpg");
-
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: relative;
+
 }
+
+
 
 .hero-content {
     max-width: 720px;
     padding: 20px;
-    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
+
+
 .hero h1 {
-    color: #fff;
+    color: white;
     font-size: 72px;
     font-weight: 700;
     margin-bottom: 25px;
+
 }
 
 .hero h1 span {
     font-style: italic;
+
 }
 
 .hero p {
     color: #d7d7d7;
     font-size: 20px;
     line-height: 1.6;
-    margin-bottom: 45px;
-}
 
-.hero {
-    position: relative;
+    margin-bottom: 45px;
+
+    max-width: 700px;
+
 }
